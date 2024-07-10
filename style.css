@@ -97,8 +97,12 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
+  h1 {
+    font-size: 65px;
+  }
   #input {
     display: flex;
+    font-size: 13px;
   }
   #taskList {
     width: 300px;
