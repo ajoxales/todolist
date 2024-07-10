@@ -1,0 +1,112 @@
+@import url("https://fonts.cdnfonts.com/css/google-sans");
+* {
+  font-family: "Product Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: -2px;
+  font-weight: 600;
+  font-size: 80px;
+  background: linear-gradient(to right, #4f82ee, #a071c3, #d86672);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 27px;
+  color: #444746;
+}
+
+body {
+  background-color: #131314;
+}
+
+#emoji {
+  font-size: 60px;
+}
+
+#input {
+  background-color: #1e1f20;
+  line-height: normal;
+}
+
+#input:focus-within {
+  background: #262829;
+}
+
+#task {
+  color: #e3e3e3;
+  background: transparent;
+  border: none;
+}
+
+#task:focus,
+#task:active {
+  outline: none;
+}
+
+button {
+  color: #e3e3e3;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+button:focus-within,
+button:hover {
+  background: #313435;
+}
+
+.task {
+  list-style-type: none;
+  color: #e3e3e3;
+  background-color: #1e1f20;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+#taskList {
+  width: 370px;
+  overflow-y: auto;
+}
+
+#btn-add {
+  font-family: "Product Sans Medium", sans-serif;
+  color: #4493ec;
+}
+
+body {
+  margin-top: 150px;
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  background-color: #131314;
+  color: #444746;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #input {
+    display: flex;
+  }
+  #taskList {
+    width: 300px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #btn-add {
+    font-size: 12px;
+  }
+}
