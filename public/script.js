@@ -1,4 +1,5 @@
 let tasks = [];
+let input = document.getElementById("task");
 
 function addTask() {
   document.getElementById("taskList").style.display = "block";
@@ -21,3 +22,11 @@ function addTask() {
   tasks.pop();
   listItem.textContent = "";
 }
+
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+
+    addTask();
+  }
+});
